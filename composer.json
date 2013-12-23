@@ -1,8 +1,8 @@
 {
-    "name": "tiesa/ldap",
+    "name": "mrdm-nl/ldap",
     "description": "LDAP made easy & practical to use in PHP",
     "keywords": ["LDAP"],
-    "homepage": "https://github.com/ccottet/ldap",
+    "homepage": "https://github.com/mrdm-nl/ldap",
     "license": "MIT",
     "authors": [
         {
@@ -20,11 +20,5 @@
     "autoload": {
         "psr-0": { "Toyota\\Component\\Ldap\\": "" }
     },
-    "target-dir": "Toyota/Component/Ldap",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
-    },
-    "minimum-stability": "stable"
+    "target-dir": "Toyota/Component/Ldap"
 }
