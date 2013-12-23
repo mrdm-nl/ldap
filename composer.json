@@ -20,5 +20,6 @@
     "autoload": {
         "psr-0": { "Toyota\\Component\\Ldap\\": "" }
     },
-    "target-dir": "Toyota/Component/Ldap"
+    "target-dir": "Toyota/Component/Ldap",
+    "minimum-stability": "stable"
 }
