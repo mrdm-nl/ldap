@@ -201,4 +201,11 @@ interface ConnectionInterface
      * @throws SearchException if search failed otherwise
      */
     public function search($scope, $baseDn, $filter, $attributes = null);
+
+	/**
+	 * Returns ldap connection
+	 *
+	 * @return mixed
+	 */
+	public function getConnection();
 }
