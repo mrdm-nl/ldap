@@ -11,6 +11,7 @@
 
 namespace Toyota\Component\Ldap\Core;
 
+use Toyota\Component\Ldap\API\ConnectionInterface;
 use Toyota\Component\Ldap\API\DriverInterface;
 use Toyota\Component\Ldap\API\SearchInterface;
 use Toyota\Component\Ldap\Exception\NodeNotFoundException;
@@ -28,6 +29,7 @@ use Toyota\Component\Ldap\Core\Node;
 class Manager
 {
 
+	/** @var ConnectionInterface */
     protected $connection = null;
 
     protected $isBound = false;
@@ -376,4 +378,14 @@ class Manager
         $this->connection->deleteEntry($node->getDn());
 
     }
+
+	/**
+	 * Returns LDAP connection
+	 *
+	 * @return resource
+	 */
+	public function getConnection()
+	{
+		return $this->connection->getConnection();
+	}
 }

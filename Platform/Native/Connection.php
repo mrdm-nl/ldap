@@ -410,4 +410,14 @@ class Connection implements ConnectionInterface
         }
         return $data;
     }
+
+	/**
+	 * Returns LDAP connection
+	 *
+	 * @return resource
+	 */
+	public function getConnection()
+	{
+		return $this->connection;
+	}
 }
